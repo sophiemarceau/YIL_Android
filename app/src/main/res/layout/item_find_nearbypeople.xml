@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/find_near_usericon"
+        android:src="@drawable/default_avatar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxx"
+        android:id="@+id/find_near_nickname"
+        android:layout_alignTop="@id/find_near_usericon"
+        android:layout_toRightOf="@+id/find_near_usericon"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#808080"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxx"
+        android:id="@+id/find_near_distence"
+        android:layout_below="@+id/find_near_nickname"
+        android:layout_alignLeft="@id/find_near_nickname"
+        android:textSize="16sp"
+        android:textColor="#999999"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/find_near_gerder"
+        android:layout_alignTop="@+id/find_near_nickname"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/find_near_nickname"
+        android:src="@drawable/near_male_icon" />
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_list"
+        android:layout_marginLeft="20dp"></LinearLayout>
+</LinearLayout>

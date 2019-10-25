@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.softinc.view.Title
+        android:id="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:drawable_left="@drawable/arraw_backbtn_white"
+        app:text_title_left="返回"
+        app:text_title_middle="参加的活动"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_meeting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tv_name"
+        android:divider="@color/bg_grey"
+        android:dividerHeight="8dp"
+        android:background="#FFFFFF" />
+
+</LinearLayout>

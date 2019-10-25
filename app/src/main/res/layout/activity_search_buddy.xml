@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+    <com.softinc.view.Title
+        android:id="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:drawable_left="@drawable/arraw_backbtn_white"
+        app:text_title_left="返回"
+        app:text_title_middle="搜索添加"/>
+
+    <EditText
+        android:id="@+id/find_search_nick"
+        style="@style/EditText"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:hint="昵称"
+        android:background="@color/white"
+        android:paddingLeft="30dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        style="@style/Container.UnderLine"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="性别"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/find_search_gender"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_any_gender"
+                style="@style/CheckBox"
+                android:text="不限"
+                android:layout_marginLeft="30dp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rb_man"
+                style="@style/CheckBox"
+                android:text="男"
+                android:layout_marginLeft="30dp" />
+
+            <RadioButton
+                android:id="@+id/rb_women"
+                style="@style/CheckBox"
+                android:text="女"
+                android:layout_marginLeft="30dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        style="@style/Container.UnderLine"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="年龄"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:layout_height="fill_parent"
+            android:id="@+id/find_search_age"
+            style="@style/EditText"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:hint="输入年龄"
+            android:layout_marginLeft="30dp"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        style="@style/Container.UnderLine">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="地区"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:id="@+id/find_search_area"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:hint="未填写"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        style="@style/Container.UnderLine">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="职业"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/find_search_job"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:hint="未填写"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="查询"
+        style="@style/Button"
+        android:id="@+id/find_search_btnQuery"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</LinearLayout>

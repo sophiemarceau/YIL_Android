@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/blue"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/Font.Big.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_middle"
+        style="@style/Font.Big.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试标题"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        style="@style/Font.Big.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="发起活动"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/iv_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arraw_backbtn_white"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

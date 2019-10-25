@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="debug">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-acfd7b100d5ac3131d5408696910c214c36de24e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/gson-2.3-a4949c9c8086fc75a45befe425933e7346d947b9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-593bfba3197180ee91e4572bc044b5c9ea731edc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/classes-560cb63a75601200c4c9fe4bd3915421a679db96.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/BaiduLBS_Android-639d2bf320a378e3224fa0cbb8c346ff9318ba5f.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/classes-2d27d4058d0e039601c7b7ac16720b2045883587.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-c6fd50af3cdbe5415f0f8806414e407ff28d585a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/easemobchat_2.1.6-a3f958994f18cd8e9cee71ce6647fce8fe751511.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3-5956dfd26fd0fb15355e551abd85abbdcf031feb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/classes-b6fe4dd9c60470e0c7f33cf7a1501703f7b04732.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/classes-7e4d2131e6570a285c332a7de75cabd668ec2366.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

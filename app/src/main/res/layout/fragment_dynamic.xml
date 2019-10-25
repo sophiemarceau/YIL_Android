@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/tv_name"
+        style="@style/title_container">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ib_title_search"
+            style="@style/title_left"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_search" />
+
+        <RadioGroup
+            android:id="@+id/rg_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_hot"
+                style="@style/RadiusTab.LeftRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:checked="true"
+                android:text="热门"
+                android:textSize="14dp"
+                android:layout_gravity="center_vertical" />
+
+            <RadioButton
+                android:id="@+id/rb_nearby"
+                style="@style/RadiusTab"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="附近"
+                android:textSize="14dp"
+                android:layout_gravity="center_vertical" />
+
+            <RadioButton
+                android:id="@+id/rb_friends"
+                style="@style/RadiusTab.RightRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="好友"
+                android:textSize="14dp"
+                android:layout_gravity="center_vertical" />
+
+
+        </RadioGroup>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ib_title_add"
+            android:layout_centerVertical="true"
+            style="@style/title_right"
+            android:background="@drawable/icon_add" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_meeting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tv_name"
+        android:divider="@color/bg_grey"
+        android:dividerHeight="8dp" />
+
+
+</RelativeLayout>

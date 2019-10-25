@@ -1,0 +1,255 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <com.softinc.view.Title
+        android:id="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:drawable_left="@drawable/arraw_backbtn_white"
+        app:text_title_middle="发起活动"
+        app:text_title_right="下一步" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                style="@style/TextView.GreyTitle"
+                android:layout_height="wrap_content"
+                android:text="主题"/>
+
+            <EditText
+                android:id="@+id/et_theme"
+                style="@style/EditText"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                style="@style/TextView.GreyTitle"
+                android:text="参与者" />
+
+            <LinearLayout
+                style="@style/line_thin"
+                android:layout_width="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg_gender"
+                    style="@style/Container.UnderLine"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_any_gender"
+                        style="@style/CheckBox"
+                        android:checked="true"
+                        android:text="不限" />
+
+                    <RadioButton
+                        android:id="@+id/rb_man"
+                        style="@style/CheckBox"
+                        android:text="男" />
+
+                    <RadioButton
+                        android:id="@+id/rb_women"
+                        style="@style/CheckBox"
+                        android:text="女" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg_member_level"
+                    style="@style/Container.UnderLine"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_pu_tong"
+                        style="@style/CheckBox"
+                        android:checked="true"
+                        android:text="不限" />
+
+                    <RadioButton
+                        android:id="@+id/rb_hei_ka"
+                        style="@style/CheckBox"
+                        android:text="黑卡" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Container.UnderLine"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="是否挑人"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_pick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Container.UnderLine"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="限定人数"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tv_count"
+                    style="@style/TextView.Input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:editable="true"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextView.GreyTitle"
+                android:text="具体信息" />
+
+            <LinearLayout
+                style="@style/Container.UnderLine"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="日期"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/TextView.Input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:editable="true"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Container.UnderLine"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="时间"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/TextView.Input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:editable="true"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Container.UnderLine"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <!--地点-->
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="地点"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tv_place"
+                    style="@style/TextView.Input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="北京"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Container.UnderLine"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <!--说明-->
+                <TextView
+                    android:id="@+id/lblDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="说明"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tv_description"
+                    style="@style/TextView.Input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="text"
+                    android:maxLength="200"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

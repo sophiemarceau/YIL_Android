@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.softinc.view.Title
+        android:id="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:drawable_left="@drawable/arraw_backbtn_white"
+        app:text_title_left="返回"
+        app:text_title_middle="如何获取信用值"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/ll_my">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日签到"
+            android:id="@+id/textView1"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:id="@+id/textView2"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView11"
+            android:src="@drawable/arraw_right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参与成功"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+2"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arraw_right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

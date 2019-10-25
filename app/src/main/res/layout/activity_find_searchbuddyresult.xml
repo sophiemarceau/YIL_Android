@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff2f2f2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical">
+
+        <!--<ImageView
+            android:id="@+id/btn_cancel_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="11dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm_title_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/find_search_result"
+            android:textColor="@color/bottom_text_color_normal"
+            android:textSize="18sp" />-->
+
+        <com.softinc.view.Title
+            android:id="@+id/tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:drawable_left="@drawable/arraw_backbtn_white"
+            app:text_title_left="返回"
+            app:text_title_middle="搜索结果"/>
+
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lv_buddyresult"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/gray_normal"/>
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2">
+
+    <com.softinc.view.Title
+        android:id="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        app:drawable_left="@drawable/arraw_backbtn_white"
+        app:text_title_left="返回"
+        app:text_title_middle="设置"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/ll_clear_cache">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除缓存"
+                android:layout_gravity="center_vertical"
+                style="@style/TextView"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0KB"
+                android:id="@+id/txtCache"
+                style="@style/TextView"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="聊天消息推送"
+                android:id="@+id/textView8"
+                style="@style/TextView"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/cb_push"
+                android:layout_marginRight="10dp"
+                style="@style/CheckBoxOC"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="需要好友认证"
+                android:id="@+id/textView9"
+                style="@style/TextView"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/cb_check"
+                android:layout_marginRight="10dp"
+                style="@style/CheckBoxOC"
+                android:checked="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/ll_about">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="关于我们"
+                android:id="@+id/tv_about"
+                style="@style/TextView"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="退出"
+        android:id="@+id/btnExit"
+        android:layout_gravity="center"
+        style="@style/Button"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#ffff000b" />
+
+</LinearLayout>

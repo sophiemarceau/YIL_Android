@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <com.softinc.view.Title
+        android:id="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:drawable_left="@drawable/arraw_backbtn_white"
+        app:text_title_middle="愿花费友币" />
+
+    <RelativeLayout
+        style="@style/Container.UnderLine"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#f2f2f2"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/Font.Small.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="愿花费友币(最少5个友币)" />
+
+        <TextView
+            android:id="@+id/tv_ranke"
+            style="@style/Font.Middle.Blue"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="0" />
+
+        <TextView
+            style="@style/Font.Small.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/tv_ranke"
+            android:gravity="center_vertical"
+            android:text="预计排名：" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_youb"
+        style="@style/EditText"
+        android:textSize="20dp"
+        android:text="0"
+        android:paddingLeft="10dp"
+        android:numeric="integer"
+        android:maxLength="3" />
+
+    <RelativeLayout
+        style="@style/Container.UnderLine"
+        android:gravity="center_vertical"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="友币余额" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_youb_left"
+                style="@style/TextView"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/bt_charge"
+                style="@style/Button"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="去充值" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/Font.Small.Grey"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/cost_youb_notifycation"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/bt_submit"
+        style="@style/Button.Full"
+        android:layout_marginTop="10dp"
+        android:text="发布" />
+
+
+</LinearLayout>

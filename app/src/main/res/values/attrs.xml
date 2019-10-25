@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingButton">
+        <attr name="text_left" format="string|reference"/>
+        <attr name="text_right" format="string|reference"/>
+        <!--是否选中左边-->
+        <attr name="check_left" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="Tag">
+        <!--标签的内容-->
+        <attr name="text" format="string|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="Title">
+        <!--最左侧的图-->
+        <attr name="drawable_left" format="reference"/>
+        <!--左侧的文字-->
+        <attr name="text_title_left" format="string|reference"/>
+        <!--中间文字-->
+        <attr name="text_title_middle" format="string|reference"/>
+        <!--右侧的图-->
+        <attr name="drawable_right" format="reference"/>
+        <!--右侧文字-->
+        <attr name="text_title_right" format="string|reference"/>
+    </declare-styleable>
+
+</resources>

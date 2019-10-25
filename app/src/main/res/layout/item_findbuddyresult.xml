@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="59dp"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/find_buddy_icon"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:src="@drawable/default_avatar"
+        app:border_color="#CCCCCC"
+        app:border_width="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin_chat_activity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/find_buddy_nickname"
+        android:layout_toRightOf="@id/find_buddy_icon"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:text="xxx"
+        android:layout_toLeftOf="@+id/find_buddy_add" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/find_buddy_add"
+        android:layout_alignParentRight="true"
+        android:text="加好友"
+        android:layout_centerVertical="true"
+        android:textSize="13sp"
+        android:textColor="@color/common_bg"
+        android:background="@drawable/sel_common_bt_bg"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:layout_marginRight="10dp"/>
+    />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_list"
+        android:layout_marginLeft="20dp"></LinearLayout>
+</LinearLayout>

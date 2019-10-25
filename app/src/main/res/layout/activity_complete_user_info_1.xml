@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <com.softinc.view.Title
+        android:id="@+id/tv_name"
+        app:text_title_middle="完善基本资料"
+        app:drawable_left="@drawable/arraw_backbtn_white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!--昵称-->
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_below="@id/tv_name"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="right"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/text_grey"
+            android:textSize="22sp"
+            android:text="昵称"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_nickname"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+
+    <!--性别-->
+    <LinearLayout
+        android:id="@+id/ll_gender"
+        android:layout_below="@id/ll_name"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="right"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/text_grey"
+            android:textSize="22sp"
+            android:text="性别"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_man"
+                android:checked="true"
+                android:text="男"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/rb_women"
+                android:text="女"
+                android:layout_marginLeft="35dp"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <!--出生日期-->
+    <LinearLayout
+        android:id="@+id/ll_birthday"
+        android:layout_below="@id/ll_gender"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="right"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/text_grey"
+            android:textSize="22sp"
+            android:text="出生日期"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:textSize="22sp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+
+    <!--地区-->
+    <LinearLayout
+        android:id="@+id/ll_section"
+        android:layout_below="@id/ll_birthday"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="right"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/text_grey"
+            android:textSize="22sp"
+            android:text="地区"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_section"
+            android:textSize="22sp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+
+    <!--职业-->
+    <LinearLayout
+        android:id="@+id/ll_job"
+        android:layout_below="@id/ll_section"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="right"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/text_grey"
+            android:textSize="22sp"
+            android:text="职业"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_job"
+            android:textSize="22sp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+
+    <!--下一步按钮-->
+    <Button
+        android:id="@+id/bt_next"
+        android:background="@drawable/sel_common_bt_bg"
+        android:layout_margin="15dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:text="下一步"
+        android:layout_below="@id/ll_job"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:textColor="@color/text_grey"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_below="@id/bt_next"
+        android:text="完善基本资料并上传头像后,才能报名或者发起约会"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

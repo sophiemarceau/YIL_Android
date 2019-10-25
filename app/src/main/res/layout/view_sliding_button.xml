@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_sliding"
+        android:background="@color/blue"
+        android:layout_width="100dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_sliding_left"
+            android:background="@drawable/ic_launcher"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_sliding_right"
+            android:background="@drawable/ic_launcher"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关"/>
+
+
+</LinearLayout>

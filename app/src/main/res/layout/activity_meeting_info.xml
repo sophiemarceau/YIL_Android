@@ -1,0 +1,402 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <com.softinc.view.Title
+        android:id="@+id/tv_name"
+        style="@style/Title"
+        app:drawable_left="@drawable/arraw_backbtn_white"
+        app:text_title_middle="详情" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <!--头像-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="#f2f2f2"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/vbg"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="信用"
+                        android:id="@+id/textView12"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="5dp"
+                        android:textSize="10dp"
+                        android:layout_gravity="top|center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/tv_xin_yong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#ffffffff"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/default_avatar"
+                        app:border_color="#CCCCCC"
+                        app:border_width="3dp"
+                        android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+
+                        <!--发起者昵称,性别,年龄-->
+                        <TextView
+                            android:id="@+id/tv_nickname"
+                            style="@style/row_meeting_text"
+                            android:drawableRight="@drawable/male_icon"
+                            android:gravity="center_vertical"
+                            android:text="如果唉 " />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/ll_icon"
+                    android:layout_toRightOf="@id/ll_icon"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginRight="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        style="@style/TextView.Big.SingleLine"
+                        android:layout_below="@id/tv_name"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="5dp"
+                        android:text="分哦打算减肥速度较快复苏的开发建设贷款" />
+
+                    <TextView
+                        android:id="@+id/tv_place"
+                        style="@style/row_meeting_text"
+                        android:text="南京大排档"
+                        android:singleLine="false"
+                        android:textIsSelectable="true"
+                        android:ellipsize="none"
+                        android:scrollHorizontally="false"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="3dp"
+                        android:maxLines="100"
+                        android:layout_height="wrap_content" />
+
+                    <!--活动时间-->
+                    <TextView
+                        android:id="@+id/tv_time_and_money"
+                        style="@style/row_meeting_text"
+                        android:text="2015年4月1日 15:08:16  我请客" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="要求:"
+                            android:id="@+id/textView15"
+                            style="@style/row_meeting_text"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_require"
+                            style="@style/row_meeting_text"
+                            android:layout_marginRight="-50dp"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--头像右侧信息-->
+
+        </RelativeLayout>
+
+        <!-- 聊天和活动地址按钮-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:id="@+id/b_chat"
+                style="@style/Button.BlueStroke"
+                android:background="#ff0097f4"
+                android:text="聊天"
+                android:textColor="#ffffffff"
+                android:layout_width="fill_parent"
+                android:visibility="gone" />
+
+            <Button
+                android:text="加好友"
+                android:id="@+id/btnAddFriend"
+                style="@style/Button.BlueStroke"
+                android:textColor="#ffffffff"
+                android:visibility="gone"
+                android:layout_width="fill_parent" />
+
+            <Button
+                android:text="等待验证"
+                android:id="@+id/btnWait"
+                style="@style/Button.BlueStroke"
+                android:background="#f2f2f2"
+                android:textColor="#666666"
+                android:visibility="gone"
+                android:layout_width="fill_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:maxLines="100"
+            android:singleLine="false"
+            android:scrollHorizontally="false"
+            android:text="长句长长的一句话长长的的一句话话长长的一句话长长的一句话长长的一句话长长的一句话长长的一句话"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_margin="10dp" />
+
+        <!--3个数值文本-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_icon"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tv_watch_count"
+                style="@style/TextView.Small"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_comment_count"
+                android:drawableLeft="@drawable/view_icon"
+                android:gravity="center"
+                android:text="234" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_sign_up_count"-->
+            <!--style="@style/TextView.Small"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:drawableLeft="@android:drawable/ic_notification_clear_all"-->
+            <!--android:gravity="center"-->
+            <!--android:text="1" />-->
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                style="@style/TextView.Small"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/chat_icon"
+                android:gravity="center"
+                android:text="1223" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#f2f2f2"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/commentCount"
+                style="@style/Button"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                android:singleLine="true"
+                android:text="评论"
+                android:textColor="#333333"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#CCCCCC"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"></LinearLayout>
+
+            <Button
+                android:id="@+id/joinCount"
+                style="@style/Button"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                android:text="报名"
+                android:textColor="#CCCCCC"
+                android:textSize="14dp"
+                android:textAlignment="center" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="举报"
+                    android:id="@+id/tv_jb"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#CCCCCC"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_cr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:measureWithLargestChild="false"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="visible" />
+
+            <ListView
+                android:id="@+id/lv_users"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" />
+
+            <!--<ListView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/lv_users" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/lv_cr"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnExit"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:text="取消报名"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnJoin"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:text="报名"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:id="@+id/btnCom"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1"
+                android:text="评论"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
